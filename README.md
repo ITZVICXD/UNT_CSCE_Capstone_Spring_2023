@@ -1,4 +1,4 @@
-# capstone-project
+# chat-bot
 
 ## Project setup
 ```

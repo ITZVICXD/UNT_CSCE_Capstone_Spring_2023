@@ -1,14 +1,15 @@
 <template>
-  <DialogPage/>
+  <ChatBot/>
 </template>
 
 <script>
-import DialogPage from './components/DialogPage.vue'
+/* eslint-disable */
+import ChatBot from './components/ChatBot.vue'
 
 export default {
   name: 'App',
   components: {
-    DialogPage
+    ChatBot
   }
 }
 </script>
