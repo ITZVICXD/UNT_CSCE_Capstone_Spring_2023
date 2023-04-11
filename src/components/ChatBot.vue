@@ -3,11 +3,41 @@
     <img :src="image" />
     <h1>Accessibility Chat Bot</h1>
   </div>
+  <div class="box">
+    <p>
+      Welcome to the site! This website hosts a chat bot created
+      by students in the 1 semester capstone of the University of North Texas. 
+    </p>
+    <p>
+      The bot has yet to be named but it is created to assist 
+      those working to make their websites accessbile according to the <a href="https://www.w3.org/TR/WCAG21/">WCAG2.1</a>.
+    </p>
+  </div>
+  <div>
+    <h1>How to Use the Bot</h1>
+    <p class="box">
+      To get started using the bot you can click the chat bubble in the bottom right corner.
+    </p>
+    <h1>Details and Warnings</h1>
+    <div class="box">
+      <ul>
+        <li>
+            You can have as many active chats as your want, they are preserved via cookies on your your system.<br>
+            This means if you clear your cookies you <strong>clear</strong> your chat history with the bot.
+        </li>
+        <li>
+          The bot is currently only trained on the <strong>WCAG 2.1</strong> success criterion and guidelines.<br>
+          It is possible in the future it could be updated for general accessbility assistance.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>&copy; <small>UNT Capstone One Semester 2</small></footer>
 </template>
 
 <script>
 /* eslint-disable */
-import image from "../Images/UNT.jpg"
+import image from "../Images/UNT.png"
 export default {
   name: 'HelloWorld',
   data() {
@@ -72,4 +102,16 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+  .box {
+    background-color: green;
+    border: 5px white groove;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .box ul li{
+    padding: 5px;
+  }
+</style>
